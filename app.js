@@ -8,18 +8,12 @@ const myDataCol = document.querySelectorAll('td');
 const fetchBitcoinAPI = async () => {
     try {
         const res = await fetch('https://api.cryptonator.com/api/ticker/btc-usd');
-        const data = await res.json();
-        const finalobj = [
-            BitcoinBase = data.ticker.base,
-            BitcoinTarget = data.ticker.target,
-            BitcoinPrice = data.ticker.price,
-            BitcoinVolume = data.ticker.volume,
-            BitcoinChange= data.ticker.change]    
-        myDataCol[0].innerHTML = finalobj[0]; 
-        myDataCol[1].innerHTML = finalobj[1] +"$";  
-        myDataCol[2].innerHTML = "$"+finalobj[2]; 
-        myDataCol[3].innerHTML = finalobj[3]; 
-        myDataCol[4].innerHTML = finalobj[4]; 
+        const data = await res.json();  
+        myDataCol[0].innerHTML = data.ticker.base; 
+        myDataCol[1].innerHTML = data.ticker.target +"$";  
+        myDataCol[2].innerHTML = "$"+data.ticker.price; 
+        myDataCol[3].innerHTML = data.ticker.volume; 
+        myDataCol[4].innerHTML = data.ticker.change; 
     } catch (e) {
         bitTitle.innerText = "BITCOIN API NOT AVAILABLE RIGHT NOW!";
         console.log(e);
