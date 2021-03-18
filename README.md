@@ -1,4 +1,5 @@
 # BitcoinPriceWebsite
 
 Bitcoin Cryptocurrency Price Website
-V 1.1 With Javascript AND Cryptonator API But not Responsive
+V 1.2 With Javascript AND Cryptonator API Implemented
+Status: Completed? Can be Updated
