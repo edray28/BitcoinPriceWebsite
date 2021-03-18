@@ -1,0 +1,38 @@
+.container-sm {
+  background-color: aliceblue;
+
+  border-color: #4056a1;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 2px;
+  text-align: justify;
+}
+
+h1 {
+  font-family: "Jura", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+  color: white;
+}
+
+body {
+  background-color: #1a1a1d;
+}
+
+.githubpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 62.5em;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.gitico {
+  width: 100px;
+}
+
+/* FOR DATA WITH API font-family: "Roboto Mono", monospace; */
